@@ -120,10 +120,17 @@ h1 {
 /*Rows of images*/
 .container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0 5px;
 }
 
+@media (max-width: 768px) {
+
+    .container {
+		margin-top: 2000px;
+    }
+}
 .image-wrapper {
 	position: relative;
 }

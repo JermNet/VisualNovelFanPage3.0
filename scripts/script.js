@@ -28,5 +28,4 @@ function addEventListeners() {
         }
         expandable.classList.toggle("expandable-open");
     });
-    
 }

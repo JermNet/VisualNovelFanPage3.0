@@ -1,28 +1,30 @@
+/*Color variables*/
 :root {
     /*Eerie black*/
     --color-1: #172121;
 	/*White smoke*/
 	--color-2: #F5F5F5;
+	/*Gentle Lavender*/
+	--color-3: #C7B8D6;
+	/*Millennial Pink*/
+	--color-4: #F3CFC6;
 }
-/*For the body of every webpage*/
+
+/*Main body stuff*/
 body {
 	font-family: "MS Gothic", "Times New Roman", Times, serif;
 	font-size: 22px;
 	line-height: 32px;
 	margin: 0;
 	padding: 16px;
-	/*White smoke (white)*/
-	color: #F5F5F5;
+	color: var(--color-2);
 	word-wrap: break-word !important;
 }
 
+/*Make links look like normal text except on hover*/
 a {
 	text-decoration: none;
-	color: inherit;
-}
-
-footer a {
-	color: var(--color-1)
+	color: var(--color-2);
 }
 
 a:hover {
@@ -31,8 +33,7 @@ a:hover {
 
 /*Cards styling*/
 .card {
-	/*Gentle Lavender (Purple)*/
-	background-color: #C7B8D6;
+	background-color: var(--color-3);
 	padding: auto;
 	height: 200px;
 	width: 200px;
@@ -58,31 +59,15 @@ a:hover {
 	}
 }
 
-
-/*Anchor styling*/
-.clannad a {
-	/*Eerie black*/
-	color: #172121;
-}
-
-
 /*List syling*/
 ul {
 	list-style: none;
 }
 
-
 /*Text stuff*/
 h1 {
 	margin-top: 75px;
 }
-
-
-/*Image styling*/
-.main img {
-	margin-top: 20px;
-}
-
 
 /*Rows of images*/
 .container {
@@ -91,7 +76,6 @@ h1 {
 	justify-content: space-between;
 	padding: 0 5px;
 }
-
 
 .image-wrapper {
 	position: relative;
@@ -113,7 +97,6 @@ h1 {
 	margin-bottom: -75px;
 }
 
-
 /*Stuff above rows of images*/
 .main {
 	width: 70%;
@@ -130,6 +113,9 @@ h1 {
 	text-align: justify;
 }
 
+.main img {
+	margin-top: 20px;
+}
 
 /*Center an image*/
 .center {
@@ -139,22 +125,10 @@ h1 {
 	width: 50%;
 }
 
-
 /*Round the edges of an image*/
 .round {
 	border-radius: 25px;
 }
-
-
-/*Styling the footer*/
-footer {
-	position: fixed;
-	z-index: 999;
-	padding: 200px 0 0;
-	left: 50%;
-	transform: translate(-50%);
-}
-
 
 /*Spinny images*/
 .spin {
@@ -166,13 +140,20 @@ footer {
 	transition: all 1s ease-in-out 0s;
 }
 
+/*Styling the footer*/
+footer {
+	position: fixed;
+	z-index: 999;
+	padding: 200px 0 0;
+	left: 50%;
+	transform: translate(-50%);
+}
 
 /*Expandable stuff*/
 .expandable {
 	-webkit-text-stroke-width: 0;
 	font-weight: bold;
-	/*Eerie black*/
-	color: #172121;
+	color: var(--color-1);
 }
 
 .expandable-open .expandable-content-wrapper {
@@ -201,8 +182,7 @@ footer {
 	justify-content: space-between;
 	padding: 14px;
 	user-select: none;
-	/*Millennial Pink*/
-	background-color: #F3CFC6;
+	background-color: var(--color-4);
 	border-radius: 10px 10px 0 0;
 }
 
@@ -213,9 +193,8 @@ footer {
 }
 
 .expandable-content {
-	/*Millennial Pink*/
-	border: 1px solid #F3CFC6;
-	background-color: #F3CFC6;
+	border: 1px solid var(--color-4);
+	background-color: var(--color-4);
 	border-radius: 0 0 10px 10px;
 }
 
@@ -230,7 +209,6 @@ footer {
 .expandable p {
 	padding: 0 10px;
 }
-
 
 /*Marquee stuff*/
 .marquee {

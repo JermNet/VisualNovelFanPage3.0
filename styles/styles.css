@@ -43,13 +43,6 @@ a:hover {
 	color: #172121;
 }
 
-.manga {
-	background-image: url("images/MangaCorner/MangaCornerBG.png");
-	/*Eerie black*/
-	-webkit-text-stroke-color: #172121;
-	-webkit-text-stroke-width: 1px;
-}
-
 .vnds {
 	background-image: url("images/VndsCorner/VndsCornerBG.png");
 	/*Eerie black*/

@@ -32,13 +32,6 @@ a:hover {
 	background-image: url("images/VisualNovelCorner/VisualNovelCornerBG.png");
 }
 
-.clannad {
-	background-image: url("images/ClannadCorner/ClannadCornerBG.png");
-	/*Eerie black*/
-	-webkit-text-stroke-color: #172121;
-	-webkit-text-stroke-width: 1px;
-}
-
 .fan {
 	background-image: url("images/FanCorner/FanCornerBG.png");
 }

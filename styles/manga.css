@@ -3,3 +3,9 @@ body {
 	-webkit-text-stroke-color: var(--color-1);
 	-webkit-text-stroke-width: 1px;
 }
+
+@media (max-width: 768px) {
+    .container {
+		margin-top: 2000px;
+    }
+}

@@ -37,12 +37,6 @@ a:hover {
 	background-image: url("images/TsukihimeCorner/TsukihimeCornerBG.png");
 }
 
-.merchandise {
-	background-image: url("images/MerchandiseCorner/MerchandiseCornerBG.png");
-	/*Eerie black*/
-	color: #172121;
-}
-
 .vnds {
 	background-image: url("images/VndsCorner/VndsCornerBG.png");
 	/*Eerie black*/

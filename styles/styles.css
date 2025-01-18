@@ -19,6 +19,10 @@ a {
 	color: inherit;
 }
 
+footer a {
+	color: var(--color-1)
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -30,10 +34,6 @@ a:hover {
 
 .visual {
 	background-image: url("images/VisualNovelCorner/VisualNovelCornerBG.png");
-}
-
-.fan {
-	background-image: url("images/FanCorner/FanCornerBG.png");
 }
 
 .tsukihime {

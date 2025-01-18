@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/clannad/clannad_background.png");
+  background-image: url("../images/clannad/clannad_background.png");
 	-webkit-text-stroke-color: var(--color-1);
 	-webkit-text-stroke-width: 1px;
 }

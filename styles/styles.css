@@ -29,10 +29,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.visual {
-	background-image: url("images/VisualNovelCorner/VisualNovelCornerBG.png");
-}
-
 .vnds {
 	background-image: url("images/VndsCorner/VndsCornerBG.png");
 	/*Eerie black*/

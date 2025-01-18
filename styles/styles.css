@@ -1,6 +1,8 @@
 :root {
     /*Eerie black*/
     --color-1: #172121;
+	/*White smoke*/
+	--color-2: #F5F5F5;
 }
 /*For the body of every webpage*/
 body {
@@ -25,11 +27,6 @@ footer a {
 
 a:hover {
 	text-decoration: underline;
-}
-
-/*Specific background images/text colours*/
-.oddities {
-	background-image: url("images/VisualNovelOddities/VisualNovelOdditiesBG.png");
 }
 
 .visual {

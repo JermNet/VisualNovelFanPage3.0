@@ -1,3 +1,7 @@
+:root {
+    /*Eerie black*/
+    --color-1: #172121;
+}
 /*For the body of every webpage*/
 body {
 	font-family: "MS Gothic", "Times New Roman", Times, serif;
@@ -10,6 +14,14 @@ body {
 	word-wrap: break-word !important;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 
 /*Specific background images/text colours*/
 .oddities {
@@ -25,12 +37,6 @@ body {
 	/*Eerie black*/
 	-webkit-text-stroke-color: #172121;
 	-webkit-text-stroke-width: 1px;
-}
-
-.anime {
-	background-image: url("images/AnimeCorner/AnimeCornerBG.png");
-	/*Eerie black*/
-	color: #172121;
 }
 
 .fan {
@@ -125,12 +131,7 @@ h1 {
 	padding: 0 5px;
 }
 
-@media (max-width: 768px) {
 
-    .container {
-		margin-top: 2000px;
-    }
-}
 .image-wrapper {
 	position: relative;
 }

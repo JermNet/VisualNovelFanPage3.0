@@ -242,3 +242,11 @@ footer {
 		left: -100%;
 	}
 }
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: auto;
+}

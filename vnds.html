@@ -69,13 +69,13 @@
 							<br>
 							<a href="https://archive.org/details/vnds-1.5.2.tar"><li>vnds Version 1.5.2</li></a>
 							<br>
-							<a href="#"><li>English (.novel format)</li></a>
-							<br>
 							<a href="#"><li>English</li></a>
 							<br>
 							<a href="#"><li>French</li></a>
 							<br>
 							<a href="#"><li>Russian</li></a>
+							<br>
+							<a href="#"><li>English (.novel format)</li></a>
 							<br>
 							<a href="https://mega.nz/folder/sl4ygIpK#sVHBXVCumZUn_wge8Kqx0A"><li>Mega Link</li></a>
 						</ul>
@@ -105,11 +105,11 @@
 						<ul>
 							<a href="https://archive.org/details/android-nlweeabooandroidvnds-0"><li>apk</li></a>
 							<br>
-							<a href="#"><li>English</li></a>
+							<a href="https://archive.org/details/vnds-android"><li>English</li></a>
 							<br>
-							<a href="#"><li>Russian</li></a>
+							<a href="https://archive.org/details/hikari-no-valusia"><li>Russian</li></a>
 							<br>
-							<a href="#"><li>Vietnamese</li></a>
+							<a href="https://archive.org/details/narcissu-2-vietnamese-version"><li>Vietnamese</li></a>
 							<br>
 							<a href="https://mega.nz/folder/sl4ygIpK#sVHBXVCumZUn_wge8Kqx0A"><li>Mega Link</li></a>
 						</ul>
@@ -183,7 +183,7 @@
 
 			<article class="expandable" id="vnds-list">
 				<div class="expandable-title">
-					<a href="#"><h3>English (Android)</h3></a>
+					<a href="https://archive.org/details/vnds-android"><h3>English (Android)</h3></a>
 					<ion-icon class="expandable-icon" name="chevron-back-circle-sharp"></ion-icon>
 				</div>
 				<div class="expandable-content-wrapper">
@@ -276,7 +276,7 @@
 
 			<article class="expandable">
 				<div class="expandable-title">
-					<a href="#"><h3>Russian (Android)</h3></a>
+					<a href="https://archive.org/details/hikari-no-valusia"><h3>Russian (Android)</h3></a>
 					<ion-icon class="expandable-icon" name="chevron-back-circle-sharp"></ion-icon>
 				</div>
 				<div class="expandable-content-wrapper">
@@ -313,7 +313,7 @@
 
 			<article class="expandable">
 				<div class="expandable-title">
-					<a href="#"><h3>Vietnamese (Android)</h3></a>
+					<a href="https://archive.org/details/narcissu-2-vietnamese-version"><h3>Vietnamese (Android)</h3></a>
 					<ion-icon class="expandable-icon" name="chevron-back-circle-sharp"></ion-icon>
 				</div>
 				<div class="expandable-content-wrapper">
@@ -356,7 +356,10 @@
 							Now, since vnds games are so simple, there's not too many things that you need to get working. You can even use a normal text editor if you want to, but personally, I wouldn't recommend it. For a text editor, my two biggest recommendations are either VSCode (which I'm using to make this website) or Notepad++. In terms of image editing software, pretty much anything will work as long as you know what you're planning to do. If you want to make a vnds original, you'll be making all the assets yourself, and likely have a photo editing software yourself. But, if you want to make a port, you'll need the assets of the original game, and to resize them (I use a web editor called BeFunky). To get said assets, The Spriters Resource is great, and there's a Ren'Py extractor I'll list with everything else. 
 						</p>
 						<p>
-							Finally, there's audio stuff. You're going to need Audacity, simply to change the sample rate depending on the piece of audio. Finally, I haven't been able to get libfaac working with ffmepg, and the default aac encoder with FFmpeg (which you need aac files for sound effects in vnds) makes the sound come out crusty, but sound effects aren't 100% required. Though, if anyone has a fix, it would be appreciated (feel free to comment on any of my vnds videos).
+							Then, there's audio stuff. You're going to need Audacity, simply to change the sample rate depending on the piece of audio. In terms of sounds, I haven't been able to get libfaac working with ffmepg, and the default aac encoder with FFmpeg (which you need aac files for sound effects in vnds) makes the sound come out crusty, but sound effects aren't 100% required. Though, if anyone has a fix, it would be appreciated (feel free to comment on any of my vnds videos). There's also 2 specific made vnds aac converters, but the one of them that has been archived doesn't work. Still, I'll link it just in case.
+						</p>
+						<p>
+							vnds also comes with a "script_format.txt" file which, although doesn't cover everything, covers most of the things you will need to understand the syntax of vnds. On top of that, there's a GitHub wiki page which does cover everything, which has a whole host of links and tools which are more than helpful for this. One specific one that I will link my own download to is a vnds script checker. It's in beta, but the full release stopped working so it's pretty much you're only option other than filtering through your scripts by hand.
 						</p>
 						<ul class="vnds-list">
 							<a href="https://notepad-plus-plus.org/"><li>Notepad++</li></a>
@@ -366,6 +369,9 @@
 							<a href="https://iwanplays.itch.io/rpaex"><li>RPA Extract</li></a>
 							<a href="https://www.audacityteam.org/"><li>Audacity</li></a>
 							<a href="https://www.ffmpeg.org/"><li>FFmpeg</li></a>
+							<a href="#"><li>VNDSaacEncoder</li></a>
+							<a href="https://github.com/BASLQC/vnds/wiki/Visual-Novel-Porting-Guide"><li>vnds GitHub Wiki</li></a>
+							<a href="#"><li>VNDS Script Checker</li></a>
 						</ul>
 					</div>
 				</div>
@@ -380,7 +386,7 @@
 					<div class="expandable-content">
 						<img class="center round" src="images/vnds/step_1_format.png" alt="A screenshot of file explorer with the file structure of a vnds game.">
 						<p>
-							So, this is what the file structure of vnds game looks like. All of these files and folders are in a folder which can be called whatever you like, and then that folder is in the "novels" folder of vnds. Now, some of these are self explanatory and some are not as much. The "background" folder contains all background images. vnds looks in here (and all folders) automatically when loading a background, but you have to specifiy an entire path if it's anywhere else, including a subfolder in background. 
+							So, this is what the file structure of vnds game looks like. All of these files and folders are in a folder which can be called whatever you like, and then that folder is in the "novels" folder of vnds. Now, some of these are self explanatory and some are not as much. The "background" folder contains all background images. vnds looks in here (and all folders) automatically when loading a background, but you have to specifiy a path if it's anywhere else. 
 						</p>
 						<p>
 							You don't ever have to touch the "save" folder, as it's generated automatically the first time you save. The "script" folder contains all script files, which are ".scr" (screensaver) files, but for all intents and purposes, may as well be text files. The "skin" folder is optional, and contains styles of how your specific VN can look. The styles are just pngs, with all the large menus being an image each, and smaller buttons being as one image interpreted by vnds. vnds itself comes with a template skin to help make skinning easier.
@@ -431,7 +437,7 @@
 					<div class="expandable-content">
 						<img class="center round" src="images/vnds/step_4_bgload.png" alt="A screenshot of VS Code with examples of how bgload works.">
 						<p>
-							To start off with, background images should fit the resolution of the Nintendo DS exactly, that being 256 by 192 pixels. Anything else, and you'll run into issues. They should also be either pngs or jpgs. An important note in terms of loading is that bgload clears all sprites, so you have to load them again after a bgload. To actually load images, it's just the word "bgload" followed by the image name including file type. As mentioned before, you also have to specify the directory if it's anywhere other than the "background" folder. Finally, if you follow the image name by a space and an integer, that represents the time in frames the image will fade in with. The default is 16, and the DS runs at 60 frames per second.
+							To start off with, background images should fit the resolution of the Nintendo DS exactly, that being 256 by 192 pixels. Anything else, and you'll run into issues. They should also be either pngs or jpgs. An important note in terms of loading is that bgload clears all sprites, so you have to load them again after a bgload. To actually load images, it's just the word "bgload" followed by the image name including file type. As mentioned before, you also have to specify the directory if it's anywhere other than the root "background" folder. Finally, if you follow the image name by a space and an integer, that represents the time in frames the image will fade in with. The default is 16, and the DS runs at 60 frames per second.
 						</p>
 					</div>
 				</div>

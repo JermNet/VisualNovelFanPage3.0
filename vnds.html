@@ -472,6 +472,21 @@
 					</div>
 				</div>
 			</article>
+
+			<article class="expandable">
+				<div class="expandable-title">
+					<h3>7. Syntax - sound</h3>
+					<ion-icon class="expandable-icon" name="chevron-back-circle-sharp"></ion-icon>
+				</div>
+				<div class="expandable-content-wrapper">
+					<div class="expandable-content">
+						<img class="center round" src="images/vnds/07_sound.png" alt="A screenshot of VS Code with examples of how sound works.">
+						<p>
+							Sound is a lot like music, just with a little more to it. First of all, like I mentioned, sound comes out a bit crusty as is with no working converter that I could find to do sounds properly. Still, to get a sound converted the "crusty" way, you need FFmpeg, and to run this command in command prompt: "ffmpeg -i "infile" -c:a aac -b:a 16k "outfile"". In terms of how it works within vnds, you play a sound by using the keyword "sound" followed by the file. And stop all sounds, it's "sound" followed by a "~" just like with music. The two extra lines are for number of times the sound will be repeated, with -1 being infinite. The last important thing to note is that sound is loaded into memory so sounds should be 1MB or less.
+						</p>
+					</div>
+				</div>
+			</article>
 			
 			<div id="footer-container"></div>
 		</div>

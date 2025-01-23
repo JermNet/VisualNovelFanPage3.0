@@ -257,3 +257,24 @@ footer {
 .vnds-list a {
 	display: block;
 }
+
+.syntax-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: left;
+	background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.syntax-table th, .syntax-table td {
+    padding: 12px 15px;
+	color: var(--color-2);
+	background-color: var(--color-1);
+    border: 1px solid var(--color-2);
+}
+
+.syntax-table th {
+    background-color: var(--color-1);
+}

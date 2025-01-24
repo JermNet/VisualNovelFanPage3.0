@@ -10,6 +10,8 @@
 	--color-4: #F3CFC6;
 	/*Chinese Black*/
 	--color-5: #111111;
+	/*Gray*/
+	--color-6: #818181;
 }
 
 /*Main body stuff*/
@@ -282,7 +284,7 @@ table th, table td {
 /*Side bar nav thing stuff*/
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -297,13 +299,13 @@ table th, table td {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: var(--color-6);
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: var(--color-2);
   }
   
   .sidenav .closebtn {

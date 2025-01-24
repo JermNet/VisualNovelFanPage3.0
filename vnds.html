@@ -696,16 +696,28 @@
 				</div>
 			</article>
 
+			<h2>The Materials In Question</h2>
 			<article class="expandable">
 				<div class="expandable-title">
-					<h3>Next section</h3>
+					<h3>vnds To Ren'Py Converter (Because Why The Hell Not?)</h3>
 					<ion-icon class="expandable-icon" name="chevron-back-circle-sharp"></ion-icon>
 				</div>
 				<div class="expandable-content-wrapper">
 					<div class="expandable-content">
+						<img class="center" src="images/vnds/vnds_renpy.png" alt="A screenshot of the vnds port of Tsukihime ported to Ren'Py.">
 						<p>
-							
+							This one... Is a little bit insane. All the way back in 2009, the creator of Ren'Py himself made a was small program which converts vnds format visual novels... To Ren'Py. Considering that almost all the vnds ported novels are originally on PC, this is absolutely insane. I found it on an old forum post (which will be linked at the bottom of this article, along with other things I mention) and thought it was super cool! I'm glad that both me and Mr. PyTom both are fans of the obscure and useless!
 						</p>
+						<p>
+							If (for whatever reason) you want to use this, there are a few things to keep in mind. First, since this was made in 2009, the Python file that converts the novels just straight up doesn't work with Python 3 sadly. I did a test conversion with the DS version (I don't believe the Android version existed yet, so you may not be able to convert those) of Tsukihime, and I used Python 2.7 which seemed to work fine. The second thing is that, after you convert, you have to change all instances of labels and jumps which use "main" to "start". I think it's just an issue with the differences between Ren'Py then and Ren'Py now, but I'm not sure. Finally, not all novels convert perfectly, even ignoring the main/start issue, so please be aware of that. 
+						</p>
+
+						<ul class="block-list">
+							<a href="https://archive.org/details/vndsToRenPy"><li>vnds To Ren'Py Converter</li></a>
+							<a href="https://lemmasoft.renai.us/forums/viewtopic.php?t=6160"><li>Forum Post</li></a>
+							<a href="https://www.python.org/download/releases/2.7/"><li>Python 2.7</li></a>
+							<a href="https://github.com/JermNet/RenPyConvertedTsukihime"><li>VNDS Tsukihime Converted To Ren'Py</li></a>
+						</ul>
 					</div>
 				</div>
 			</article>

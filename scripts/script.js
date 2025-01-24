@@ -39,6 +39,9 @@ function addEventListeners() {
             }
         }
     });
+
+    window.addEventListener("resize", adjustContainerPosition);
+    window.addEventListener("load", adjustContainerPosition);
 }
 
 function openNav() {
@@ -47,4 +50,16 @@ function openNav() {
   
 function closeNav() {
     document.getElementById("sidenav").style.width = "0";
+}
+
+function adjustContainerPosition() {
+    const container = document.querySelector(".container");
+    const pageHeight = document.documentElement.scrollHeight;
+    const offset = 25;
+
+    if (window.innerWidth <= 1146) {
+        container.style.marginTop = `${pageHeight + offset}px`;
+    } else {
+        container.style.marginTop = "0px";
+    }
 }

@@ -8,6 +8,8 @@
 	--color-3: #C7B8D6;
 	/*Millennial Pink*/
 	--color-4: #F3CFC6;
+	/*Chinese Black*/
+	--color-5: #111111;
 }
 
 /*Main body stuff*/
@@ -62,6 +64,11 @@ a:hover {
 /*List syling*/
 ul {
 	list-style: none;
+}
+
+.block-list a {
+	display: block;
+	width: 60%;
 }
 
 /*Text stuff*/
@@ -254,11 +261,8 @@ footer {
     border-radius: 25px;
 }
 
-.vnds-list a {
-	display: block;
-}
-
-.syntax-table {
+/*Table styling*/
+table {
     width: 50%;
     border-collapse: collapse;
     margin: 20px auto;
@@ -268,13 +272,44 @@ footer {
     color: var(--color-2);
 }
 
-.syntax-table th, .syntax-table td {
+table th, table td {
     padding: 12px 15px;
 	color: var(--color-2);
 	background-color: var(--color-1);
     border: 1px solid var(--color-2);
 }
 
-.syntax-table th {
-    background-color: var(--color-1);
-}
+/*Side bar nav thing stuff*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-5);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }

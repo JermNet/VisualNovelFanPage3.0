@@ -195,6 +195,10 @@ footer {
 	border-radius: 10px 10px 0 0;
 }
 
+.expandable-title a {
+	cursor: pointer;
+}
+
 .expandable-icon {
 	transition: transform 0.5s;
 	cursor: pointer;

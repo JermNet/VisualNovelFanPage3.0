@@ -17,3 +17,8 @@ h2, h1, footer a {
   -webkit-text-stroke-color: var(--color-1);
 	-webkit-text-stroke-width: 1px;
 }
+
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-2);
+}

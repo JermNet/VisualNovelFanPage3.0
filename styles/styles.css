@@ -319,10 +319,11 @@ table th, table td {
 /*iframe styling*/
 iframe {
 	display: block;
-	margin: 20px auto;
-	border-radius: 15px;
-	overflow: hidden;
-	width: 900px;
-	height: 600px;
-	border: none;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px; 
+    height: auto;
+    aspect-ratio: 3 / 2;
+    border: none;
   }
